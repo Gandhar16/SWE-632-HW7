@@ -250,7 +250,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  background: rgba(1, 4, 136, 0.9);
+  background: rgba(33, 35, 156, 0.9);
 }
 
 #header.header-transparent {
@@ -433,7 +433,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   font-weight: 500;
   text-transform: none;
-  color: #01036f;
+  color: #1b1d71;
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
@@ -525,7 +525,7 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav a {
   display: block;
   position: relative;
-  color: #01036f;
+  color: #191a76;
   padding: 10px 20px;
   font-weight: 500;
   outline: none;
@@ -568,7 +568,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   position: fixed;
-  background: rgba(13, 18, 252, 0.6);
+  background: rgba(26, 28, 156, 0.6);
   overflow: hidden;
   display: none;
   transition: ease-in-out 0.2s;
@@ -840,7 +840,7 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #010483;
+  color: #212393;
 }
 
 /*--------------------------------------------------------------
@@ -923,7 +923,7 @@ section {
 .about .icon-boxes h3 {
   font-size: 30px;
   font-weight: 1000;
-  color: #010483;
+  color: #202289;
   margin-bottom: 15px;
 }
 
@@ -988,7 +988,7 @@ section {
 .about .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#3f43fd 50%, rgba(63, 67, 253, 0.4) 52%);
+  background: radial-gradient(#2f319f 50%, rgba(46, 48, 154, 0.4) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -1029,7 +1029,7 @@ section {
   animation-timing-function: steps;
   opacity: 1;
   border-radius: 50%;
-  border: 5px solid rgba(63, 67, 253, 0.7);
+  border: 5px solid rgba(56, 58, 167, 0.7);
   top: -15%;
   left: -15%;
   background: rgba(198, 16, 0, 0);
@@ -1125,12 +1125,12 @@ section {
 }
 
 .features .icon-box h3 a {
-  color: #010483;
+  color: #393bc6;
   transition: ease-in-out 0.3s;
 }
 
 .features .icon-box h3 a:hover {
-  color: #01036f;
+  color: #393bc6;
 }
 
 .features .icon-box:hover {
@@ -1169,7 +1169,7 @@ section {
   font-size: 36px;
   display: block;
   font-weight: 600;
-  color: #010483;
+  color: #393bc6;
 }
 
 .counts .count-box p {
@@ -1189,7 +1189,7 @@ section {
 .details .content h3 {
   font-weight: 1000;
   font-size: 28px;
-  color: #010483;
+  color: #393bc6;
 }
 
 .details .content ul {
@@ -1222,7 +1222,7 @@ section {
 .details .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#3f43fd 50%, rgba(63, 67, 253, 0.4) 52%);
+  background: radial-gradient(#393bc6 50%, rgba(47, 48, 158, 0.4) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -1263,7 +1263,7 @@ section {
   animation-timing-function: steps;
   opacity: 1;
   border-radius: 50%;
-  border: 5px solid rgba(63, 67, 253, 0.7);
+  border: 5px solid rgba(66, 68, 182, 0.7);
   top: -15%;
   left: -15%;
   background: rgba(198, 16, 0, 0);
@@ -1348,7 +1348,7 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(1, 3, 111, 0.8);
+  background: rgba(46, 48, 183, 0.8);
 }
 
 .testimonials .section-header {
@@ -1475,7 +1475,7 @@ section {
   font-weight: 700;
   margin-bottom: 10px;
   font-size: 16px;
-  color: #01036f;
+  color: #262895;
   position: relative;
   padding-bottom: 10px;
 }
@@ -1504,7 +1504,7 @@ section {
 
 .team .member .social a {
   transition: color 0.3s;
-  color: #01036f;
+  color: #3032ac;
 }
 
 .team .member .social a:hover {
@@ -1782,14 +1782,14 @@ body.dark-mode .contact .info label {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #010483;
+  color: #272ab9;
 }
 
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #0205a1;
+  color: #3032ad;
 }
 
 .contact .info .email, .contact .info .phone {
