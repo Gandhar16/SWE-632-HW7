@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Roundup</title>
+<meta content="" name="description"/>
+<meta content="" name="keywords"/>
+<!-- Favicons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" rel="stylesheet"/>
+<link href="assets/img/favicon.png" rel="icon"/>
+<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"/>
+<!-- Vendor CSS Files -->
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet"/>
+<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"/>
+<link href="assets/vendor/venobox/venobox.css" rel="stylesheet"/>
+<link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet"/>
+<link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet"/>
+<link href="assets/vendor/aos/aos.css" rel="stylesheet"/>
+<!-- Template Main CSS File -->
+<link href="assets/css/style.css" rel="stylesheet"/>
+<!-- =======================================================
+
+  ======================================================== -->
+</head>
+<body>
+<!-- ======= Header ======= -->
+<header class="fixed-top d-flex align-items-center header-transparent" id="header">
+<div class="container d-flex align-items-center justify-content-between">
+  <div class="logo img">
+  <img src="assets/img/logo.png" alt="Logo" width="50" height="50">  </div>
+<div class="logo">
+  <h1><a href="index.html"><span>Roundup</span></a></h1>
+
+<!-- <div class="font-slider-container">
+  <label for="font-size-slider">Font Size:</label>
+  <input type="range" id="font-size-slider" min="0.8" max="1.5" step="0.05" value="1">
+</div> -->
+</div>
+<nav class="nav-menu d-none d-lg-block">
+<ul>
+  <li class="nav-item">
+    <a href="#" id="night-mode-toggle" onclick="toggleNightMode()" style="cursor: pointer;">
+        <i class="fas fa-moon"></i>
+        <div class="tooltip-text">Night Mode</div>
+    </a>
+  </li>
+<!-- <li class="active"><a href="index.html">Home</a></li> -->
+<!-- <li><a href="#details">Deals</a></li> -->
+<li><a href="#features">Coupons</a></li>
+<li><a href="#about" onclick="navigateToSection('about')">About</a></li>
+<!-- <li><a href="#contact">Contact</a></li> -->
+
+<li class="nav-item">
+  <div class="direct-search-bar">
+      <input id="new-search-input" placeholder="Type product name..." type="text" />
+      <button onclick="searchProduct()" type="button"><i aria-hidden="true" class="fa fa-search"></i></button>
+  </div>
+</li>
+<li><a href="#cart"><i aria-hidden="true" class="fa fa-cart-plus"></i><p id="count">0</p></a></li>
+
+<!-- <li class="nav-item">
+  <div class="font-slider-container">
+      <label for="font-size-slider">Font Size:</label>
+      <input type="range" id="font-size-slider" min="0.8" max="1.5" step="0.05" value="1">
+  </div>
+</li> -->
+</ul></nav></div>
+
+</header>
+<div class="accessibility-float-button">
+  <button id="accessibility-btn" aria-label="Accessibility options">
+      <img src="assets/img/accessibility_icon.png" alt="Accessibility" /> <!-- Replace with your icon -->
+  </button>
+  <div class="accessibility-menu" aria-hidden="true">
+      <!-- Accessibility options -->
+      <button id="increase-font" aria-label="Increase font size">A+</button>
+      <button id="decrease-font" aria-label="Decrease font size">A-</button>
+      <!-- Add more buttons for other accessibility features as needed -->
+  </div>
+</div>
+</body></html>
+<script src=""></script>
+<!-- .nav-menu -->
+<!-- End Header -->
+<!-- ======= Hero Section ======= -->
+<section id="hero">
+<div class="container">
+<div class="row justify-content-between">
+<div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
+<!-- <div data-aos="zoom-out"> -->
+<div>
+<h1><span>Black Friday</span></h1>
+<h2>BIGGEST DISCOUNT OF THE YEAR. UPTO 35% OFF ON SELECTED PRODUCTS</h2>
+<div class="text-center text-lg-start">
+</div>
+</div>
+</div>
+<div class="col-lg-4 order-1 order-lg-2 hero-img">
+<img alt="" class="img-fluid animated" src="assets/img/featured-image.png"/>
+</div>
+</div>
+</div>
+<svg class="hero-waves" preserveaspectratio="none" viewbox="0 24 150 28 " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<path d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" id="wave-path">
+</path></defs>
+<g class="wave1">
+<use fill="rgba(255,255,255, .1)" x="50" xlink:href="#wave-path" y="3">
+</use></g>
+<g class="wave2">
+<use fill="rgba(255,255,255, .2)" x="50" xlink:href="#wave-path" y="0">
+</use></g>
+<g class="wave3">
+<use fill="#fff" x="50" xlink:href="#wave-path" y="9">
+</use></g>
+</svg>
+</section><!-- End Hero -->
+<main id="main">
+<!-- ======= Features Section ======= -->
+<section class="features" id="features">
+<div class="container">
+<div class="section-title">
+<h2>categories</h2>
+<p>The cyber week is here.</p>
+</div>
+<div class="row">
+<div class="col-lg-3 col-md-4">
+<div class="icon-box" onclick="navigateToSection('watch')">
+<i class="fas fa-headphones"></i>
+<h3><a href="">Electronics</a></h3>
+</div>
+</div>
+<div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+<div class="icon-box" onclick="navigateToSection('iphone')">
+<i class="fas fa-mobile"></i>
+<h3><a href="">Mobiles</a></h3>
+</div>
+</div>
+<div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+<div class="icon-box" onclick="navigateToSection('asus')">
+<i class="fas fa-laptop"></i>
+<h3><a href="">Laptops</a></h3>
+</div>
+</div>
+<div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+<div class="icon-box" onclick="navigateToSection('watch')">
+<i class="fas fa-tv"></i>
+<h3><a href="">Televisions</a></h3>
+</div>
+</div>
+<div class="col-lg-3 col-md-4 mt-4">
+<div class="icon-box" onclick="navigateToSection('watch')">
+<img alt="" height="30" src="./assets/img/refrigerator.svg" width="30"/>
+<h3><a href="">Refrigerator</a></h3>
+</div>
+</div>
+<div class="col-lg-3 col-md-4 mt-4">
+<div class="icon-box" onclick="navigateToSection('hoodie')">
+<i class="fas fa-tshirt"></i>
+<h3><a href="">Fashion</a></h3>
+</div>
+</div>
+<div class="col-lg-3 col-md-4 mt-4">
+<div class="icon-box" onclick="navigateToSection('watch')">
+<i class="fas fa-utensils"></i>
+<h3><a href="">Home &amp; Kitchen</a></h3>
+</div>
+</div>
+<div class="col-lg-3 col-md-4 mt-4">
+<div class="icon-box" onclick="navigateToSection('watch')">
+<i class="fas fa-heart"></i>
+<h3><a href="">Beauty Food &amp; More</a></h3>
+</div>
+</div>
+</div>
+</div>
+</section><!-- End Features Section -->
+<!-- ======= About Section ======= -->
+<!-- End About Section -->
+<!-- ======= Details Section ======= -->
+<section class="details" id="details">
+<div class="container">
+<div class="row content">
+<!-- <div class="col-md-4 video-box" data-aos="fade-right"> -->
+<div class="col-md-4 video-box">
+<a class="venobox play-btn mb-4" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=TCMnrssX1NE"></a>
+<!-- <img src="assets/img/tile-watch-se__knji2d25x8qe_medium.jpg" width="600px" height="500px" class="img-fluid" alt=""> -->
+</div>
+<!-- <div class="col-md-8 pt-4" data-aos="fade-up"> -->
+<div class="col-md-8 pt-4">
+<h3>THE FUTURE OF HEALTH IS ON YOUR WRIST. GET FLAT 20% OFF ON BLACK FRIDAY SALE</h3>
+<p class="font-italic">
+              Why Apple Watch
+              It’s the ultimate device for a healthy life.
+            </p>
+<ul>
+<li><i class="icofont-check"></i> watchOS 7
+                The difference
+                is like day and night.</li>
+<li><i class="icofont-check"></i>New looks that
+                feel just right.</li>
+<li><i class="icofont-check"></i> Heavy on features.
+                Light on price.</li>
+</ul>
+<div class="text-center text-lg-start">
+<div id="product-listing">
+  <div class="product-container">
+    <div class="product" id="watch" data-product-name="apple watch 7" data-price="100">
+        <img height="M-150" src="./assets/img/apple_watch_7.jpg" width="150px"/>
+        <h4>apple watch 7</h4>
+        <p>$100</p>
+        <!-- Star Rating -->
+        <div class="star-rating">
+          <span>★★★★☆</span> <!-- Example: 4 out of 5 stars -->
+        </div>
+        <button class="btn-buy-now" onclick="addToCart('apple watch 7')">Add to cart</button>
+    </div>
+    <div class="product-specs">
+        <table>
+            <tr><th>Brand</th><td>Apple</td></tr>
+            <tr><th>Model Name</th><td>Series 7</td></tr>
+            <tr><th>Style</th><td>GPS + Cellular</td></tr>
+            <tr><th>Color</th><td>Midnight</td></tr>
+            <tr><th>Screen Size</th><td>45 Millimeters</td></tr>
+            <tr><th>Special Feature</th><td>Activity Tracker, Heart Rate Monitor, Sleep Monitor, Blood Oxygen</td></tr>
+            <tr><th>Shape</th><td>Apple,Heart</td></tr>
+        </table>
+    </div>
+    <div class="add-review">
+      <h3>Add a Review</h3>
+      <!-- Star Rating for Review -->
+      <div class="review-star-rating">
+          <span class="star" onclick="setRating(1)">&#9733;</span>
+          <span class="star" onclick="setRating(2)">&#9733;</span>
+          <span class="star" onclick="setRating(3)">&#9733;</span>
+          <span class="star" onclick="setRating(4)">&#9733;</span>
+          <span class="star" onclick="setRating(5)">&#9733;</span>
+      </div>
+      <textarea id="review-text" placeholder="Write your review here..."></textarea>
+      <button class="submit-review-btn" onclick="submitReview()">Submit</button>
+  </div>
+</div>
+
+<div class="product-container">
+  <div class="product" id="watch 8" data-product-name="apple watch 8" data-price="150">
+      <img height="M-150" src="./assets/img/apple_watch_8.jpg" width="150px"/>
+      <h4>apple watch 8</h4>
+      <p>$150</p>
+      <!-- Star Rating -->
+      <div class="star-rating">
+        <span>★★★★★</span> <!-- Example: 4 out of 5 stars -->
+      </div>
+      <button class="btn-buy-now" onclick="addToCart('apple watch 8')">Add to cart</button>
+  </div>
+  <div class="product-specs">
+    <table>
+      <tr><th>Brand</th><td>Apple</td></tr>
+      <tr><th>Model Name</th><td>Series 7</td></tr>
+      <tr><th>Style</th><td>GPS + Cellular</td></tr>
+      <tr><th>Color</th><td>Midnight</td></tr>
+      <tr><th>Screen Size</th><td>45 Millimeters</td></tr>
+      <tr><th>Special Feature</th><td>Activity Tracker, Heart Rate Monitor, Sleep Monitor, Blood Oxygen</td></tr>
+      <tr><th>Shape</th><td>Apple,Heart</td></tr>
+  </table>
+  </div>
+  <div class="add-review">
+    <h3>Add a Review</h3>
+    <!-- Star Rating for Review -->
+    <div class="review-star-rating">
+        <span class="star" onclick="setRating(1)">&#9733;</span>
+        <span class="star" onclick="setRating(2)">&#9733;</span>
+        <span class="star" onclick="setRating(3)">&#9733;</span>
+        <span class="star" onclick="setRating(4)">&#9733;</span>
+        <span class="star" onclick="setRating(5)">&#9733;</span>
+    </div>
+    <textarea id="review-text" placeholder="Write your review here..."></textarea>
+    <buttonc class="submit-review-btn" onclick="submitReview()">Submit</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row content">
+<div class="col-md-4 order-1 order-md-2 video-box1">
+<a class="venobox play-btn mb-4" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=v0oASOYTq0s"></a>
+</div>
+<div class="col-md-8 pt-5 order-2 order-md-1">
+<h3>Buy big and win big, Black Friday sale</h3>
+<p class="font-italic">
+  <ul>
+  <li><i class="icofont-check"></i> Experience the ultimate in portable power and productivity with our sleek and cutting-edge laptops. Whether you're a creative professional 
+    or a multitasking enthusiast, our laptops deliver lightning-fast performance and stunning visuals to keep you ahead of the curve.</li>
+<li><i class="icofont-check"></i>Unlock boundless possibilities with our stylish laptops that seamlessly blend style and substance. With sleek designs, vibrant displays, and 
+  powerful processors, our laptops are your ticket to a world of endless entertainment, efficient work, and effortless connectivity.</li>
+</ul>
+
+            </p>
+            <div class="product-container">
+              <div class="product" id="asus" data-product-name="Asus TUF f15" data-price="1100">
+                  <img height="M-150" src="./assets/img/tuf.jpg" width="150px"/>
+                  <h4>Asus TUF f15</h4>
+                  <p>$1100</p>
+                  <!-- Star Rating -->
+                  <div class="star-rating">
+                    <span>★★★★★</span> <!-- Example: 4 out of 5 stars -->
+                  </div>
+                  <button class="btn-buy-now" onclick="addToCart('Asus TUF f15')">Add to cart</button>
+              </div>
+              <div class="product-specs">
+                  <table>
+                      <tr><th>Brand</th><td>ASUS</td></tr>
+                      <tr><th>Model Name</th><td>ASUS TUF</td></tr>
+                      <tr><th>Screen Size</th><td>15.6 Inches</td></tr>
+                      <tr><th>Color</th><td>Gray</td></tr>
+                      <tr><th>Hard Disk Size</th><td>1 TB</td></tr>
+                      <tr><th>CPU Model</th><td>Core i7</td></tr>
+                      <tr><th>Ram Memory Installed Size</th><td>32 GB</td></tr>
+                      <tr><th>Operating System</th><td>Windows 11 Pro</td></tr>
+                      <tr><th>Special Feature</th><td>Backlit Keyboard</td></tr>
+                  </table>
+              </div>
+              <div class="add-review">
+                  <h3>Add a Review</h3>
+                  <!-- Star Rating for Review -->
+                  <div class="review-star-rating" id="asusReviewRating">
+                      <span class="star" onclick="setRating(1, 'asusReviewRating')">&#9733;</span>
+                      <span class="star" onclick="setRating(2, 'asusReviewRating')">&#9733;</span>
+                      <span class="star" onclick="setRating(3, 'asusReviewRating')">&#9733;</span>
+                      <span class="star" onclick="setRating(4, 'asusReviewRating')">&#9733;</span>
+                      <span class="star" onclick="setRating(5, 'asusReviewRating')">&#9733;</span>
+                  </div>
+                  <textarea id="asus-review-text" placeholder="Write your review here..."></textarea>
+                  <button class="submit-review-btn" onclick="submitReview('asusReviewRating', 'asus-review-text')">Submit Review</button>
+              </div>
+          </div>
+          <div class="product-container">
+            <div class="product" id="predator" data-product-name="Predator" data-price="1550">
+                <img height="M-150" src="./assets/img/predator.jpeg" width="150px"/>
+                <h4>Predator</h4>
+                <p>$1550</p>
+                <!-- Star Rating -->
+                <div class="star-rating">
+                  <span>★★★☆☆</span> <!-- Example: 4 out of 5 stars -->
+                </div>
+                <button class="btn-buy-now" onclick="addToCart('Predator')">Add to cart</button>
+            </div>
+            <div class="product-specs">
+                <table>
+                  <tr><th>Brand</th><td>ACER</td></tr>
+                  <tr><th>Model Name</th><td>ACER PREDATOR</td></tr>
+                  <tr><th>Screen Size</th><td>15.6 Inches</td></tr>
+                  <tr><th>Color</th><td>Black</td></tr>
+                  <tr><th>Hard Disk Size</th><td>1 TB</td></tr>
+                  <tr><th>CPU Model</th><td>Core i9</td></tr>
+                  <tr><th>Ram Memory Installed Size</th><td>32 GB</td></tr>
+                  <tr><th>Operating System</th><td>Windows 11 Pro</td></tr>
+                  <tr><th>Special Feature</th><td>RGB Keyboard</td></tr>
+                    <!-- Add more specifications here -->
+                </table>
+            </div>
+            <div class="add-review">
+                <h3>Add a Review</h3>
+                <div class="review-star-rating" id="predatorReviewRating">
+                    <span class="star" onclick="setRating(1, 'predatorReviewRating')">&#9733;</span>
+                    <span class="star" onclick="setRating(2, 'predatorReviewRating')">&#9733;</span>
+                    <span class="star" onclick="setRating(3, 'predatorReviewRating')">&#9733;</span>
+                    <span class="star" onclick="setRating(4, 'predatorReviewRating')">&#9733;</span>
+                    <span class="star" onclick="setRating(5, 'predatorReviewRating')">&#9733;</span>
+                </div>
+                <textarea id="predator-review-text" placeholder="Write your review here..."></textarea>
+                <button class="submit-review-btn" onclick="submitReview('predatorReviewRating', 'predator-review-text')">Submit Review</button>
+            </div>
+        </div>
+</div>
+</div>
+</div>
+<div class="row content">
+<div class="col-md-4">
+<img alt="" class="img-fluid" src="assets/img/5d77febe2e22af1b3940b0c9.jfif"/>
+</div>
+<div class="col-md-8 pt-5">
+<h3>Get your favourite smartphone at cheaper price during Black Friday sale</h3>
+<ul>
+<li><i class="icofont-check"></i> Experience the future in your hands with the latest iPhone! Its 
+  cutting-edge technology, stunning design, and seamless user experience make it the ultimate choice for those who demand the best.</li>
+<li><i class="icofont-check"></i>Unlock endless possibilities with the iPhone - from its breathtaking 
+  camera capabilities that capture every moment in stunning detail to its powerful performance that keeps you ahead of the game, this device is your gateway to a world of innovation and style.</li>
+</ul>
+<div class="text-center text-lg-start">
+<div id="product-listing">
+  <div class="product-container">
+    <div class="product" id="iphone" data-product-name="iphone 14" data-price="1000">
+        <img height="M-150" src="./assets/img/iphone_14.jpg" width="150px"/>
+        <h4>iphone 14</h4>
+        <p>$1000</p>
+        <div class="star-rating">
+          <span>★★☆☆☆</span> <!-- Example: 4 out of 5 stars -->
+        </div>
+        <button class="btn-buy-now" onclick="addToCart('iphone 14')">Add to cart</button>
+    </div>
+    <div class="product-specs">
+        <table>
+            <tr><th>Brand</th><td>Apple</td></tr>
+            <tr><th>Model Name</th><td>iPhone 14</td></tr>
+            <tr><th>Wireless Carrier</th><td>Unlocked</td></tr>
+            <tr><th>Operating System</th><td>iOS</td></tr>
+            <tr><th>Cellular Technology</th><td>5G</td></tr>
+            <tr><th>Memory Storage Capacity</th><td>128 GB</td></tr>
+            <tr><th>Color</th><td>Midnight</td></tr>
+            <tr><th>Screen Size</th><td>6.1 Inches</td></tr>
+        </table>
+    </div>
+    <div class="add-review">
+        <h3>Add a Review</h3>
+        <div class="review-star-rating" id="iphoneReviewRating">
+            <span class="star" onclick="setRating(1, 'iphoneReviewRating')">&#9733;</span>
+            <span class="star" onclick="setRating(2, 'iphoneReviewRating')">&#9733;</span>
+            <span class="star" onclick="setRating(3, 'iphoneReviewRating')">&#9733;</span>
+            <span class="star" onclick="setRating(4, 'iphoneReviewRating')">&#9733;</span>
+            <span class="star" onclick="setRating(5, 'iphoneReviewRating')">&#9733;</span>
+        </div>
+        <textarea id="iphone-review-text" placeholder="Write your review here..."></textarea>
+        <button class="submit-review-btn" class="submit-review-btn" onclick="submitReview('iphoneReviewRating', 'iphone-review-text')">Submit Review</button>
+    </div>
+</div>
+<div class="product-container">
+  <div class="product" id="samsung" data-product-name="samsung ultra 22" data-price="1200">
+      <img height="M-150" src="./assets/img/samsung.jpeg" width="150px"/>
+      <h4>samsung ultra 22</h4>
+      <p>$1200</p>
+      <div class="star-rating">
+        <span>★★★★★</span> <!-- Example: 4 out of 5 stars -->
+      </div>
+      <button class="btn-buy-now" onclick="addToCart('samsung ultra 22')">Add to cart</button>
+  </div>
+  <div class="product-specs">
+      <table>
+        <tr><th>Brand</th><td>SAMSUNG</td></tr>
+        <tr><th>Model Name</th><td>	Galaxy S23 Ultra</td></tr>
+        <tr><th>Wireless Carrier</th><td>Unlocked</td></tr>
+        <tr><th>Operating System</th><td>Android 13.0</td></tr>
+        <tr><th>Cellular Technology</th><td>5G</td></tr>
+        <tr><th>Memory Storage Capacity</th><td>512 GB</td></tr>
+        <tr><th>Color</th><td>Graphite</td></tr>
+        <tr><th>Screen Size</th><td>6.8 Inches</td></tr>
+          <!-- Add more specifications here -->
+      </table>
+  </div>
+  <div class="add-review">
+      <h3>Add a Review</h3>
+      <div class="review-star-rating" id="samsungReviewRating">
+          <span class="star" onclick="setRating(1, 'samsungReviewRating')">&#9733;</span>
+          <span class="star" onclick="setRating(2, 'samsungReviewRating')">&#9733;</span>
+          <span class="star" onclick="setRating(3, 'samsungReviewRating')">&#9733;</span>
+          <span class="star" onclick="setRating(4, 'samsungReviewRating')">&#9733;</span>
+          <span class="star" onclick="setRating(5, 'samsungReviewRating')">&#9733;</span>
+      </div>
+      <textarea id="samsung-review-text" placeholder="Write your review here..."></textarea>
+      <button class="submit-review-btn" onclick="submitReview('samsungReviewRating', 'samsung-review-text')">Submit Review</button>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="row content">
+<div class="col-md-4 order-1 order-md-2">
+<img alt="" class="img-fluid" height="700px" src="assets/img/photo-1490132328392-e6ef54a90dda.jfif" width="700px"/>
+</div>
+<div class="col-md-8 pt-5 order-2 order-md-1">
+<h3>Grab your daily wears before its gone</h3>
+
+<ul>
+<li><i class="icofont-check"></i> Experience the ultimate blend of style and confidence with our cutting-edge youth 
+  fashion collection! Elevate your look and turn heads wherever you go.</li>
+<li><i class="icofont-check"></i>Unleash your inner fashionista with our trendsetting youth fashion line, designed 
+  to empower your individuality and make a statement. Be the envy of your peers with the hottest styles in town!</li>
+
+</ul>
+<div class="text-center text-lg-start">
+<div id="product-listing">
+  <div class="product-container">
+    <div class="product" id="hoodie" data-product-name="hoodie" data-price="25">
+        <img height="M-150" src="./assets/img/hoodie.jpg" width="150px"/>
+        <h4>hoodie</h4>
+        <p>$25</p>
+        <div class="star-rating">
+          <span>★★★★☆</span> <!-- Example: 4 out of 5 stars -->
+        </div>
+        <button class="btn-buy-now" onclick="addToCart('hoodie')">Add to cart</button>
+    </div>
+    <div class="product-specs">
+        <table>
+          <tr><th>Brand Name</th><td>Nike</td></tr>
+          <tr><th>Color</th><td>Black</td></tr>
+          <tr><th>Fabric Type</th><td>Cotton/Polyester</td></tr>
+          <tr><th>Care Instructions</th><td>Machine Wash</td></tr>
+          <tr><th>Closure Type</th><td>Pull On</td></tr>
+          <tr><th>Neck Style</th><td>Hooded Neck</td></tr>
+            <!-- Add more specifications here -->
+        </table>
+    </div>
+    <div class="add-review">
+        <h3>Add a Review</h3>
+        <div class="review-star-rating" id="hoodieReviewRating">
+            <span class="star" onclick="setRating(1, 'hoodieReviewRating')">&#9733;</span>
+            <span class="star" onclick="setRating(2, 'hoodieReviewRating')">&#9733;</span>
+            <span class="star" onclick="setRating(3, 'hoodieReviewRating')">&#9733;</span>
+            <span class="star" onclick="setRating(4, 'hoodieReviewRating')">&#9733;</span>
+            <span class="star" onclick="setRating(5, 'hoodieReviewRating')">&#9733;</span>
+        </div>
+        <textarea id="hoodie-review-text" placeholder="Write your review here..."></textarea>
+        <button class="submit-review-btn" onclick="submitReview('hoodieReviewRating', 'hoodie-review-text')">Submit Review</button>
+    </div>
+</div>
+<div class="product-container">
+  <div class="product" id="shoes" data-product-name="shoes" data-price="80">
+      <img height="M-150" src="./assets/img/shoes.jpg" width="150px"/>
+      <h4>shoes</h4>
+      <p>$80</p>
+      <div class="star-rating">
+        <span>★★★★☆</span> <!-- Example: 4 out of 5 stars -->
+      </div>
+      <button class="btn-buy-now" onclick="addToCart('shoes')">Add to cart</button>
+  </div>
+  <div class="product-specs">
+      <table>
+        <tr><th>Brand Name</th><td>Adidas</td></tr>
+        <tr><th>Color</th><td>Black</td></tr>
+        <tr><th>Care Instructions</th><td>Machine Wash</td></tr>
+        <tr><th>Sole Material</th><td>Rubber</td></tr>
+        <tr><th>Closure Type</th><td>Lace-Up</td></tr>
+        <tr><th>Water Resistance Level</th><td>Not Water Resistant</td></tr>
+          <!-- Add more specifications here -->
+      </table>
+  </div>
+  <div class="add-review">
+      <h3>Add a Review</h3>
+      <div class="review-star-rating" id="shoesReviewRating">
+          <span class="star" onclick="setRating(1, 'shoesReviewRating')">&#9733;</span>
+          <span class="star" onclick="setRating(2, 'shoesReviewRating')">&#9733;</span>
+          <span class="star" onclick="setRating(3, 'shoesReviewRating')">&#9733;</span>
+          <span class="star" onclick="setRating(4, 'shoesReviewRating')">&#9733;</span>
+          <span class="star" onclick="setRating(5, 'shoesReviewRating')">&#9733;</span>
+      </div>
+      <textarea id="shoes-review-text" placeholder="Write your review here..."></textarea>
+      <button class="submit-review-btn" onclick="submitReview('shoesReviewRating', 'shoes-review-text')">Submit Review</button>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<script>
+function addToCart(productName, quantity) {
+    alert(productName + " added to cart with quantity " + quantity);
+}
+</script>
+<!-- End Details Section -->
+<!-- Shopping Cart Section -->
+<section class="cart" id="cart">
+<div class="container">
+<div class="section-title">
+<h2>Your Shopping Cart</h2>
+<p>Shopping Cart</p>
+</div>
+<div class="cart-content">
+<ul id="cart-list" style="display: none;">
+</ul>
+<!-- <p>No items in cart yet.</p> -->
+<div id="cart-total">Total: $0</div>
+<button class="checkout-button" onclick="checkout()">Checkout</button>
+</div>
+</div>
+</section>
+<!-- End Shopping Cart Section -->
+<!-- ======= Gallery Section ======= -->
+<!-- End Gallery Section -->
+<!-- ======= Team Section ======= -->
+<!-- End Team Section -->
+<!-- ======= Pricing Section ======= -->
+<!-- End Pricing Section -->
+<!-- ======= F.A.Q Section ======= -->
+<section class="faq section-bg" id="faq">
+<div class="container">
+<!-- <div class="section-title" data-aos="fade-up"> -->
+<div class="section-title">
+<h2>F.A.Q</h2>
+<p>Frequently Asked Questions</p>
+</div>
+<div class="faq-list">
+<ul>
+<!-- <li data-aos="fade-up"> -->
+<li>
+<i class="bx bx-help-circle icon-help"></i> <a class="collapse" data-bs-target="#faq-list-1" data-bs-toggle="collapse">What is Black Friday sale? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+<div class="collapse show" data-bs-parent=".faq-list" id="faq-list-1">
+<p>
+                  Black Friday is an informal name for the Friday following Thanksgiving Day in the United States, which is celebrated on the fourth Thursday of November. Many stores offer highly promoted sales on Black Friday and open very early, or may even start their sales at some time on Thanksgiving.
+                </p>
+</div>
+</li>
+<li>
+<i class="bx bx-help-circle icon-help"></i> <a class="collapsed" data-bs-target="#faq-list-2" data-bs-toggle="collapse">Why is it called Black Friday? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+<div class="collapse" data-bs-parent=".faq-list" id="faq-list-2">
+<p>
+                  The name Black Friday was adopted because on this day businesses go deep into the “black” with profits as opposed to the “red” with losses as many stores operate most of the year.                </p>
+</div>
+</li>
+<li>
+<i class="bx bx-help-circle icon-help"></i> <a class="collapsed" data-bs-target="#faq-list-3" data-bs-toggle="collapse">Is it necessary to wait for Black Friday to shop? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+<div class="collapse" data-bs-parent=".faq-list" id="faq-list-3">
+<p>
+                  While it may not be completely essential to wait until Black Friday to do all of your shopping, it is wise to wait until this day or Thanksgiving to do the bulk of it.                </p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section><!-- End F.A.Q Section -->
+<!-- ======= Contact Section ======= -->
+<section class="contact" id="contact">
+<div class="container">
+<div class="section-title">
+<h2>Contact</h2>
+<p>Contact Us</p>
+</div>
+<div class="row">
+<div class="col-lg-4">
+<div class="info">
+<div class="address">
+<i class="icofont-google-map"></i>
+<h4>Location:</h4>
+<p>A108 Adam Street, New York, NY 535022</p>
+</div>
+<div class="email">
+<i class="icofont-envelope"></i>
+<h4>Email:</h4>
+<p>abc@gmail.com</p>
+</div>
+<div class="phone">
+<i class="icofont-phone"></i>
+<h4>Call:</h4>
+<p>+1 5589 55488 55s</p>
+</div>
+</div>
+</div>
+  <div class="col-lg-8 mt-5 mt-lg-0">
+    <form action="forms/contact.php" class="php-email-form" method="post" role="form" onsubmit="return validateForm();">
+    <div class="row">
+    <div class="col-md-6 form-group">
+    <input class="form-control" data-msg="Please enter a name" data-rule="minlen:1" id="name" name="name" placeholder="Your Name" type="text"/>
+    <div class="validate"></div>
+    </div>
+    <div class="col-md-6 form-group mt-3 mt-md-0">
+    <input class="form-control" data-msg="Please enter a valid email" data-rule="email" id="email" name="email" placeholder="Your Email" type="email"/>
+    <div class="validate"></div>
+    </div>
+    </div>
+    <div class="form-group mt-3">
+    <input class="form-control" data-msg="Please enter a subject" data-rule="minlen:1" id="subject" name="subject" placeholder="Subject" type="text"/>
+    <div class="validate"></div>
+    </div>
+    <div class="form-group mt-3">
+    <textarea class="form-control" data-msg="Please write something for us" data-rule="required" name="message" placeholder="Message" rows="5"></textarea>
+    <div class="validate"></div>
+    </div>
+    <div class="mb-3">
+    <div class="loading">Loading</div>
+    <!-- <div class="error-message"></div> -->
+    <div class="sent-message">Your message has been sent. Thank you!</div>
+    </div>
+    <div class="text-center"><button type="submit" >Send Message</button></div>
+
+    </form>
+    </div>
+    </div>
+    </div>
+    </section><!-- End Contact Section -->
+    
+</main><!-- End #main -->
+<!-- ======= Footer ======= -->
+<footer id="footer">
+<div class="footer-top">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 col-md-6">
+<div class="footer-info">
+<div class="logo img">
+  <img src="assets/img/logo.png" alt="Logo" width="50" height="50">
+</div>
+<h3>Roundup</h3>
+<p class="pb-3"><em>How about a shopping spree from the comfort of your home? Find everything you need and more, only a click away!</em></p>
+<p>
+                A108 Adam Street <br/>
+                NY 535022, USA<br/><br/>
+<strong>Phone:</strong> +1 5589 55488 55<br/>
+<strong>Email:</strong> abc@gmail.com<br/>
+</p>
+<div class="social-links mt-3">
+<a class="twitter" href="#"><i class="bx bxl-twitter"></i></a>
+<a class="facebook" href="#"><i class="bx bxl-facebook"></i></a>
+<a class="instagram" href="#"><i class="bx bxl-instagram"></i></a>
+<a class="google-plus" href="#"><i class="bx bxl-skype"></i></a>
+<a class="linkedin" href="#"><i class="bx bxl-linkedin"></i></a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 footer-links">
+<h4>Useful Links</h4>
+<ul>
+<li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+<li><i class="bx bx-chevron-right"></i> <a href="#">Deals</a></li>
+<li><i class="bx bx-chevron-right"></i> <a href="#">Coupons</a></li>
+<li><i class="bx bx-chevron-right"></i> <a href="#">About</a></li>
+<li><i class="bx bx-chevron-right"></i> <a href="#">Contact</a></li>
+</ul>
+</div>
+
+<div class="col-lg-4 col-md-6 footer-newsletter">
+<h4>Our Newsletter</h4>
+<p>Subscribe to our Newsletter to get to known about our latest discount and offers</p>
+<form action="javascript:void(0)" method="post" onsubmit="return  validateEmail();">
+<input name="email" id="subEmail" data-rule="email" placeholder="Your Email" type="email"/><input type="submit" value="Subscribe" onclick="toggleSubscribeButton()"/>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="copyright">
+        © Copyright <strong><span>Roundup</span></strong>. All Rights Reserved
+      </div>
+<div class="credits">
+
+        Designed by <a href="">Team632</a>
+</div>
+</div>
+</footer>
+
+
+<!-- <a class="back-to-top" href="#"><i class="icofont-simple-up"></i></a> -->
+<div id="preloader"></div>
+
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/venobox/venobox.min.js"></script>
+<script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+<script src="assets/vendor/counterup/counterup.min.js"></script>
+<script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+
+<script src="assets/js/main.js"></script>
+<section class="about" id="about">
+</section><section class="deals" id="deals"></section>
